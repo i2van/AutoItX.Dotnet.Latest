@@ -1,0 +1,6 @@
+﻿<Project>
+  <PropertyGroup>
+    <Version>3.3.16.1</Version>
+    <PackageReleaseNotes>AutoIt $(Version)</PackageReleaseNotes>
+  </PropertyGroup>
+</Project>

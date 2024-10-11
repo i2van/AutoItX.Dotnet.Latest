@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.Build.NoTargets/3.7.56">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <SuppressDependenciesWhenPacking>true</SuppressDependenciesWhenPacking>
+    <NoWarn>NU5101</NoWarn>
+    <Configurations>NuGet</Configurations>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Description>AutoIt package for .NET (Windows only), includes .NET assembly and native x86/x64 Windows DLLs from AutoIt distribution. Drop-in replacement for AutoItX.Dotnet NuGet package.</Description>
+    <Authors>AutoIt team, Ivan Ivon (ivan.ivon@gmail.com)</Authors>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>autoit automation scripting windows</PackageTags>
+    <PackageIcon>AutoIt.png</PackageIcon>
+    <PackageProjectUrl>https://www.autoitscript.com</PackageProjectUrl>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <RepositoryUrl>https://github.com/i2van/AutoItX.Dotnet.Latest</RepositoryUrl>
+    <Copyright>Copyright © 2022-$([System.DateTime]::Now.Year) $(Authors)</Copyright>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="build\*">
+      <PackagePath>build</PackagePath>
+      <PackageCopyToOutput>true</PackageCopyToOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\*">
+      <PackagePath>lib</PackagePath>
+      <PackageCopyToOutput>true</PackageCopyToOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img/AutoIt.png">
+      <Pack>true</Pack>
+      <PackagePath/>
+    </Content>
+    <Content Include="../LICENSE.md">
+      <Pack>true</Pack>
+      <PackagePath/>
+    </Content>
+    <Content Include="../README.md">
+      <Pack>true</Pack>
+      <PackagePath/>
+    </Content>
+  </ItemGroup>
+
+</Project>
