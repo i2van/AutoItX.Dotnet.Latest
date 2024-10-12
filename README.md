@@ -5,5 +5,5 @@
 [![Downloads](https://img.shields.io/nuget/dt/AutoItX.Dotnet.Latest)](https://www.nuget.org/packages/AutoItX.Dotnet.Latest)
 [![License: AutoIt](https://img.shields.io/badge/license-AutoIt-yellow.svg)](https://www.autoitscript.com/autoit3/docs/license.htm)
 
-[AutoIt](https://www.autoitscript.com) package for [.NET](https://documentation.help/AutoItX/dotnet_usage.htm) (Windows only), includes .NET assembly and native x86/x64 Windows DLLs from [AutoIt distribution](https://www.autoitscript.com/site/autoit/downloads/).
+[AutoIt](https://www.autoitscript.com) NuGet package for [.NET](https://documentation.help/AutoItX/dotnet_usage.htm) (Windows only). Includes .NET assembly and native x86/x64 Windows DLLs from [AutoIt distribution](https://www.autoitscript.com/site/autoit/downloads/).
 [Drop-in replacement](https://en.wikipedia.org/wiki/Drop-in_replacement) for [AutoItX.Dotnet](https://www.nuget.org/packages/AutoItX.Dotnet) NuGet package.
