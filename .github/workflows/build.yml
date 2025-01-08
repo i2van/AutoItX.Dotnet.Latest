@@ -1,6 +1,6 @@
 ﻿name: build
 
-on: [push, pull_request]
+on: [push, pull_request, workflow_dispatch]
 
 env:
   NAME: AutoItX.Dotnet.Latest
@@ -17,7 +17,7 @@ jobs:
     # Check out
 
     - name: Check out ${{env.NAME}}
-      uses: actions/checkout@v4.2.1
+      uses: actions/checkout@v4.2.2
 
     # Build
 
@@ -27,7 +27,7 @@ jobs:
     # Upload artifacts
 
     - name: Publish ${{env.NAME}} ${{env.CONFIG}}
-      uses: actions/upload-artifact@v4.4.3
+      uses: actions/upload-artifact@v4.5.0
       with:
         name: ${{env.NAME}}${{env.BIN_POSTFIX}}
         path: ${{env.NAME}}/bin/${{env.CONFIG}}/${{env.NAME}}.*.*nupkg
