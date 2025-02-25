@@ -27,7 +27,7 @@ jobs:
     # Upload artifacts
 
     - name: Publish ${{env.NAME}} ${{env.CONFIG}}
-      uses: actions/upload-artifact@v4.6.0
+      uses: actions/upload-artifact@v4.6.1
       with:
         name: ${{env.NAME}}${{env.BIN_POSTFIX}}
         path: ${{env.NAME}}/bin/${{env.CONFIG}}/${{env.NAME}}.*.*nupkg
